@@ -19,3 +19,6 @@ jobs:
 
       - name: Run tests
         run: python -m pytest tests/ -v
+
+      - name: Train and register Modal
+        run : python -m src.mlflow_tracking
